@@ -318,7 +318,7 @@
       </div>
 
 %h2#Comments
-  Template comments with <code>{{! }}</code>
+  Template comments with <code>{{!-- --}}</code>
 
 .content
   .bullet
@@ -328,7 +328,7 @@
       practice.
     :html
       <div class="entry">
-        {{! only output this author names if an author exists }}
+        {{!-- only output this author names if an author exists --}}
         {{#if author}}
           <h1>{{firstName}} {{lastName}}</h1>
         {{/if}}
@@ -338,7 +338,7 @@
       comments to show up. Just use html comments, and they will be output.
     :html
       <div class="entry">
-        {{! This comment will not be in the output }}
+        {{!-- This comment will not be in the output --}}
         <!-- This comment will be in the output -->
       </div>
 
